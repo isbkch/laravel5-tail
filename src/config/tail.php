@@ -17,7 +17,7 @@ return [
         ],
     ],
 
-    // Change it to true if you have grc (Generic Colouriser) installed in your system
+    // Change it to 'true' if you have grc (Generic Colouriser) installed in your system
     // To install grc on Debian based: sudo apt-get install grc
-    'grc' => false
+    'grc' => 'false'
 ];
