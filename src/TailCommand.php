@@ -53,13 +53,13 @@ class TailCommand extends Command
      */
     private function tailLocalLogFile()
     {
-        $path = $this->findNewestLocalLogfile();
-
+        $path  = $this->findNewestLocalLogfile();
         $lines = $this->option('lines');
 
         $this->info('start tailing '.$path);
 
-        $tailCommand = 'tail -f -n '.$lines.' '.escapeshellarg($path);
+        $grcParameter = config('tail.grc') ? config('tail.grc') : '';
+        $tailCommand  = $grcParameter . ' tail -f -n '.$lines.' '.escapeshellarg($path);
 
         $this->executeCommand($tailCommand);
 

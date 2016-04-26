@@ -4,9 +4,7 @@ return [
 
     'connections' => [
 
-        /*
-         * The environment name. You can use this value in the tail command.
-         */
+         // The environment name. You can use this value in the tail command.
         'production' => [
              // Hostname of the server where the logs are located
             'host'  => '',
@@ -18,4 +16,8 @@ return [
             'logDirectory' => '',
         ],
     ],
+
+    // Change it to true if you have grc (Generic Colouriser) installed in your system
+    // To install grc on Debian based: sudo apt-get install grc
+    'grc' => false
 ];
