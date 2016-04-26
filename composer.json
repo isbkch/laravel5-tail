@@ -1,0 +1,30 @@
+{
+    "name": "isbkch/laravel5-tail",
+    "description": "A tail command for Laravel 5",
+    "keywords": [
+        "laravel 5",
+        "tail",
+        "log",
+        "laravel5-tail"
+    ],
+    "homepage": "https://github.com/isbkch/laravel5-tail",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ilyas Bakouch",
+            "email": "isbkch@gmail.com",
+            "homepage": "https://isbkch.space",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=5.5.9",
+        "illuminate/support": "~5.0",
+        "illuminate/console": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Isbkch\\Tail\\": "src"
+        }
+    }
+}
