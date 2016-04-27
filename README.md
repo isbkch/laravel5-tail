@@ -26,6 +26,7 @@ If you're planning on tailing remote logs you must publish the config file with 
 php artisan vendor:publish --provider="Isbkch\Tail\TailServiceProvider"
 ```
 A file named ``tail.php`` will be created in the config directory. The options you can set in the file should be self-explanatory.
+PS: You can get the username from the .env file
 ```php
 
 return [
@@ -43,7 +44,7 @@ return [
 
 
              // Username to be used when connecting to the server where the logs are located
-            'user' => '',
+            'user'  => env('TAIL_USERNAME', 'i_bakouch'),
 
              // Full path to the directory where the logs are located
             'logDirectory' => '',

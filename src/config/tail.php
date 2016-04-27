@@ -10,7 +10,7 @@ return [
             'host'  => '',
 
              // Username to be used when connecting to the server where the logs are located
-            'user' => '',
+            'user'  => env('TAIL_USERNAME', 'i_bakouch'),
 
              // Full path to the directory where the logs are located
             'logDirectory' => '',
