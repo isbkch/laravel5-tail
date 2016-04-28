@@ -58,7 +58,7 @@ class TailCommand extends Command
 
         $this->info('start tailing '.$path);
 
-        $grcParameter = config('tail.grc') ? config('tail.grc') : '';
+        $grcParameter = config('tail.grc') == 'true' ? 'grc' : '';
         $tailCommand  = $grcParameter . ' tail -f -n '.$lines.' '.escapeshellarg($path);
 
         $this->executeCommand($tailCommand);
