@@ -16,7 +16,7 @@ You must install this service provider:
 
 'providers' => [
     ...
-    'Isbkch\Tail\TailServiceProvider',
+    Isbkch\Tail\TailServiceProvider::class,
     ...
 ];
 ```
