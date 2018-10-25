@@ -32,13 +32,11 @@ class TailServiceProvider extends ServiceProvider
      * @return void
      */
     public function register()
-    {
-        $this->app['command.tail'] = $this->app->share(
-            function ($app) {
-                return new TailCommand();
-            }
-        );
-
+    {   
+        $this->app->singleton('command.tail', function ($app) {
+            return new TailCommand();
+        });
+        
         $this->commands('command.tail');
     }
 
