@@ -44,7 +44,7 @@ return [
 
 
              // Username to be used when connecting to the server where the logs are located
-            'user'  => env('TAIL_USERNAME', 'i_bakouch'),
+            'user'  => env('TAIL_USERNAME', 'isbkch'),
 
              // Full path to the directory where the logs are located
             'logDirectory' => '',
@@ -77,14 +77,6 @@ To tail a remote log you must first specify ```hostname``` and ```logDirectory``
 ``` bash
 php artisan tail production
 ```
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
-
-## Security
-
-If you discover any security related issues, please email isbkch@gmail.com instead of using the issue tracker.
 
 ## Credits
 
